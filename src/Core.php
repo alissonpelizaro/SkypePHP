@@ -8,8 +8,9 @@
 * En: Include this file to load whole library in your project
 */
 
-require_once 'modules/Skype.class.php';
 require_once 'modules/Config.class.php';
 require_once 'modules/Methods.class.php';
+require_once 'modules/Engine.class.php';
+require_once 'modules/Skype.class.php';
 
  ?>

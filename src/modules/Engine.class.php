@@ -1,12 +1,12 @@
 <?php
-
 /**
  *
  */
-class Methods {
+class Engine {
 
   function __construct() {
-
+    // code...
   }
+
 }
  ?>

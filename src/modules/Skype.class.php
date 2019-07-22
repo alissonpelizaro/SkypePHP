@@ -8,12 +8,35 @@
 * En: Main class of low-level Skype integration
 */
 
- class Skype {
- 	public $username;
- 	private $password, $registrationToken, $skypeToken, $expiry = 0, $logged = false, $hashedUsername, $randId;
+ class Skype extends Methods{
 
- 	public function __construct($username = false, $username = false, $folder = "skypephp") {
- 		$this->username = $username;
+  /* Public user data */
+ 	public $username;
+
+  /* Private user data */
+  private $password;
+  private $registrationToken;
+  private $skypeToken;
+  private $hashedUsername;
+  private $randId;
+  private $logged = false;
+  private $expiry = 0;
+
+  /* Private objects */
+  private $engine;
+  private $methods;
+  private $config;
+
+ 	public function getRandIdUrl($url){
+ 		$url = explode("cobrandid=", $url);
+ 		if(!isset($url[1])) return false;
+ 		$url = explode("&username", $url[1]);
+ 		if(!isset($url[0])) return false;
+ 		return $url[0];
+ 	}
+
+  public function login($username, $password, $folder = "skypephp"){
+    $this->username = $username;
  		$this->password = $password;
  		$this->folder = $folder;
  		$this->hashedUsername = sha1($username);
@@ -33,26 +56,14 @@
  			$this->skypeToken = $auth["skypeToken"];
  			$this->registrationToken = $auth["registrationToken"];
  			$this->expiry = $auth["expiry"];
+      return true;
  		} else {
- 			$this->login();
+ 			return $this->loginRequest();
  		}
- 	}
+    return false;
+  }
 
- 	public function imprime(){
-
- 		echo $this->hashedUsername."\n\n";
-
- 	}
-
- 	public function getRandIdUrl($url){
- 		$url = explode("cobrandid=", $url);
- 		if(!isset($url[1])) return false;
- 		$url = explode("&username", $url[1]);
- 		if(!isset($url[0])) return false;
- 		return $url[0];
- 	}
-
- 	private function login() {
+ 	private function loginRequest() {
  		$loginForm = $this->web("https://login.skype.com/login/oauth/microsoft?client_id=578134&redirect_uri=https%3A%2F%2Fweb.skype.com%2F&username={$this->username}", "GET", [], true, true);
  		preg_match("`urlPost:'(.+)',`isU", $loginForm, $loginURL);
  		$loginURL = $loginURL[1];
@@ -165,7 +176,7 @@
 
  		if ($this->logged && time() >= $this->expiry) {
  			$this->logged = false;
- 			$this->login();
+ 			$this->loginRequest();
  		}
 
  		$headers = $customHeaders;
@@ -269,7 +280,7 @@
  	}
 
  	public function createGroup($users = [], $topic = "") {
- 		$users = [];
+ 		$members = [];
 
  		foreach ($users as $user)
  			$members["members"][] = ["id" => "8:".$this->URLtoUser($user), "role" => "User"];
