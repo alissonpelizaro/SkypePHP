@@ -1,23 +1,7 @@
-# SkypePHP
-
-SkypePHP - Alisson Pelizaro (alissonpelizaro@hotmail.com)
+SkypePHP
 ===========
+Alisson Pelizaro (alissonpelizaro@hotmail.com)
 Yes, it works!
-
-```
-        ___     _,.--.,_         Elephant.io is a rough websocket client
-      .-~   ~--"~-.   ._ "-.     written in PHP. Its goal is to ease the
-     /      ./_    Y    "-. \    communications between your PHP Application and
-    Y       :~     !         Y   a real-time server.
-    lq p    |     /         .|
- _   \. .-, l    /          |j   Requires PHP 5.4 and openssl, licensed under
-()\___) |/   \_/";          !    the MIT License.
- \._____.-~\  .  ~\.      ./
-            Y_ Y_. "vr"~  T      Built-in Engines :
-            (  (    |L    j      - Socket.io 2.x
-            [nn[nn..][nn..]      - Socket.io 1.x
-          ~~~~~~~~~~~~~~~~~~~    - Socket.io 0.x (courtesy of @kbu1564)
-```
 
 NOTICE
 ======
@@ -29,6 +13,13 @@ Installation
 ============
 We are suggesting you to use composer, with the following : `php composer.phar require alissonpelizaro/SkypePHP`.
 
+Basic usage
+============
+Include `src/Core.php` before of all.
+```php
+$sk = new Skype;
+$sk->login('username', 'password') or die ('Username or password is invalid');
+```
 Documentation
 =============
 Sorry, I have no time to publish a clean documentation at the momento. You can see `exemple/exemple.php` for technical details and for special support: https://developer.microsoft.com/en-us/skype/bots/docs

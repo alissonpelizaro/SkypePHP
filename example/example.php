@@ -11,7 +11,7 @@
 include '../src/Core.php';
 
 $sk = new Skype;
-$sk->login('dev@enterness.com', 'Enter@cbs!') or die ('Username or password is invalid');
+$sk->login('username', 'password') or die ('Username or password is invalid');
 
 
 /*
