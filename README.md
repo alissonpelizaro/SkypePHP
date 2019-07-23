@@ -1,5 +1,4 @@
 ![logo](/src/assets/Skype.png)
-===========
 SkypePHP 
 ===========
 Alisson Pelizaro (alissonpelizaro@hotmail.com)
