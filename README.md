@@ -1,7 +1,7 @@
 ![logo](/src/assets/Skype.png)
 SkypePHP 
 ===========
-Alisson Pelizaro (alissonpelizaro@hotmail.com)
+Alisson Pelizaro (alissonpelizaro@hotmail.com)\
 Yes, it works!
 
 NOTICE
@@ -27,4 +27,4 @@ Sorry, I have no time to publish a clean documentation at the moment. You can se
 
 Special Thanks
 ==============
-Special thanks goes to @fujimoto, you low-level knowledge heps me a lot.
+Special thanks goes to @fujimoto, your low-level knowledge heps me a lot.
