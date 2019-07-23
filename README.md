@@ -1,4 +1,4 @@
-SkypePHP
+SkypePHP # ![logo](/src/assets/Skype.png)
 ===========
 Alisson Pelizaro (alissonpelizaro@hotmail.com)
 Yes, it works!
@@ -22,7 +22,7 @@ $sk->login('username', 'password') or die ('Username or password is invalid');
 ```
 Documentation
 =============
-Sorry, I have no time to publish a clean documentation at the momento. You can see `exemple/exemple.php` for technical details and for special support: https://developer.microsoft.com/en-us/skype/bots/docs
+Sorry, I have no time to publish a clean documentation at the moment. You can see `exemple/exemple.php` for technical details. For special support see: https://developer.microsoft.com/en-us/skype/bots/docs
 
 Special Thanks
 ==============
