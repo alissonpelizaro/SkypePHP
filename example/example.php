@@ -18,7 +18,7 @@ $sk->login('username', 'password') or die ('Username or password is invalid');
 * Pt: Enviar uma mensagen
 * En: Send a message
 */
-//$sk->sendMessage('skype_id', 'Mensagem');
+$sk->sendMessage('skype_id', 'Mensagem');
 
 /*
 * Pt: Obter array de todas as conversas
