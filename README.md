@@ -1,4 +1,6 @@
-SkypePHP # ![logo](/src/assets/Skype.png)
+![logo](/src/assets/Skype.png)
+===========
+SkypePHP 
 ===========
 Alisson Pelizaro (alissonpelizaro@hotmail.com)
 Yes, it works!
