@@ -350,9 +350,12 @@
  	}
 
  	public function getContactsList() {
- 		$req = json_decode($this->web("https://contacts.skype.com/contacts/v1/users/{$this->username}/contacts?\$filter=type%20eq%20%27skype%27%20or%20type%20eq%20%27msn%27%20or%20type%20eq%20%27pstn%27%20or%20type%20eq%20%27agent%27&reason=default"), true);
+ 		$userdata = $this->readMyProfile();
+   if(!isset($userdata['username'])) return [];
 
- 		return isset($req["contacts"]) ? $req["contacts"] : [];
+   $req = json_decode($this->web("https://edge.skype.com/pcs-df/contacts/v2/users/{$userdata['username']}?reason=default"), true);
+   return isset($req['contacts']) ? $req['contacts'] : [];
+
  	}
 
  	public function readProfile($list) {
