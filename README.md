@@ -10,6 +10,8 @@ It is a Skype PHP-API that is able to send and receive messages, get contacts, g
 It is still development and I am loneny in this project, so be patient...
 Pull requests are always welcome!!
 
+Warning: In the current version, only pure text messages work in chat.
+
 Installation
 ============
 We are suggesting you to use composer, with the following : `php composer.phar require alissonpelizaro/SkypePHP`.
