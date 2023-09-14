@@ -5,9 +5,7 @@ LinkedIn: [Alisson Pelizaro](https://br.linkedin.com/in/alisson-pelizaro) \
 Yes, it works!
 
 
-It is a Skype PHP API interface, that is able to send and receive messages, get contacts, get conversations and much more!
-It is still development and I am loneny in this project, so be patient...
-Pull requests are always welcome!!
+Welcome to the Skype PHP API Interface, a versatile tool that enables you to seamlessly send and receive messages, access contacts, retrieve conversations, and much more! While this project is currently in active development, your support and contributions are greatly appreciated
 
 #### IMPORTANT NOTE: In the current version, only pure text messages working in chat.
 
@@ -110,9 +108,11 @@ _Leaves a group:_
 $sk->leaveGroup({GROUP_ID});
 ```
 
-> For groups messaging, you can use the same mothods for chat messaging. You'll only need to provide the group id instead the chat id.
+> For groups messaging, you can use the same method for chat. You'll only need to provide the group id instead the chat id.
 
 ## Documentation
-Sorry, I hadn't time to publish a clean documentation at the moment. You can see `example/example.php` for technical details. For Skype API support see: https://developer.microsoft.com/en-us/skype/bots/docs
+Please note that a comprehensive documentation is currently in the works, but hasn't been finalized yet due to time constraints. In the meantime, you can explore the technical details by referring to the `example/example.php` file provided within the project.
+
+For additional information and support related to the Skype API, please visit the official Skype API documentation at: [Skype API Documentation](https://developer.microsoft.com/en-us/skype/bots/docs)
 
 #### I really hope this can helps you somehow, good luck! 
