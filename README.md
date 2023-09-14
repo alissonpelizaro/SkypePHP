@@ -1,4 +1,4 @@
-align="center"
+
 ![logo](/src/assets/Skype.png)
 SkypePHP 
 ===========
