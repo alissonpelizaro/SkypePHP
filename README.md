@@ -1,7 +1,8 @@
+align="center"
 ![logo](/src/assets/Skype.png)
 SkypePHP 
 ===========
-LinkedIn: [Alisson Pelizaro](https://br.linkedin.com/in/alisson-pelizaro) \
+LinkedIn: [Alisson Pelizaro](https://br.linkedin.com/in/alisson-pelizaro) 
 
 Welcome to the Skype PHP API Interface, a versatile tool that enables you to seamlessly send and receive messages, access contacts, retrieve conversations, and much more! While this project is currently in active development, your support and contributions are greatly appreciated
 
