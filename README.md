@@ -2,10 +2,16 @@
 SkypePHP 
 ===========
 LinkedIn: [Alisson Pelizaro](https://br.linkedin.com/in/alisson-pelizaro) \
-Yes, it works!
-
 
 Welcome to the Skype PHP API Interface, a versatile tool that enables you to seamlessly send and receive messages, access contacts, retrieve conversations, and much more! While this project is currently in active development, your support and contributions are greatly appreciated
+
+## Project Status: In Development
+
+Please keep in mind that this project is an ongoing endeavor, and we are continuously working to enhance its functionality and capabilities. Your patience and understanding are invaluable as we strive to make this interface the best it can be.
+
+## Contributions
+
+We invite you to become a part of this project's journey by contributing through pull requests. Your ideas, enhancements, and bug fixes are invaluable in shaping the future of this interface. Together, we can make it even more powerful and user-friendly.
 
 #### IMPORTANT NOTE: In the current version, only pure text messages working in chat.
 
@@ -23,7 +29,7 @@ $sk = new Skype;
 $sk->login('username', 'password') or die ('Username or password is invalid');
 ```
 
-> NOTE: If the login returns Authentication failed with the right user and password, it's possible that the Skype API is asking for a CAPTCHA quizz. In this case, you will need to perform a login/(re)login manually using a browser to solve the CAPTCHA. After that, you can try to perfom the API login again.
+> NOTE: If the login returns with an error of Authentication failed with the correct username and password, its asking for CAPTCHA, Please perform a login/(re)login manually using a browser to solve the CAPTCHA. After that, you can try to perfom the API login again.
 
 After login, you'll be able to run the following Skype functions:
 
