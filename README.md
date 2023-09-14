@@ -1,13 +1,18 @@
+
 ![logo](/src/assets/Skype.png)
 SkypePHP 
 ===========
-LinkedIn: [Alisson Pelizaro](https://br.linkedin.com/in/alisson-pelizaro) \
-Yes, it works!
+LinkedIn: [Alisson Pelizaro](https://br.linkedin.com/in/alisson-pelizaro) 
 
+Welcome to the Skype PHP API Interface, a versatile tool that enables you to seamlessly send and receive messages, access contacts, retrieve conversations, and much more! While this project is currently in active development, your support and contributions are greatly appreciated
 
-It is a Skype PHP API interface, that is able to send and receive messages, get contacts, get conversations and much more!
-It is still development and I am loneny in this project, so be patient...
-Pull requests are always welcome!!
+## Project Status: In Development
+
+Please keep in mind that this project is an ongoing endeavor, and we are continuously working to enhance its functionality and capabilities. Your patience and understanding are invaluable as we strive to make this interface the best it can be.
+
+## Contributions
+
+We invite you to become a part of this project's journey by contributing through pull requests. Your ideas, enhancements, and bug fixes are invaluable in shaping the future of this interface. Together, we can make it even more powerful and user-friendly.
 
 #### IMPORTANT NOTE: In the current version, only pure text messages working in chat.
 
@@ -25,7 +30,7 @@ $sk = new Skype;
 $sk->login('username', 'password') or die ('Username or password is invalid');
 ```
 
-> NOTE: If the login returns Authentication failed with the right user and password, it's possible that the Skype API is asking for a CAPTCHA quizz. In this case, you will need to perform a login/(re)login manually using a browser to solve the CAPTCHA. After that, you can try to perfom the API login again.
+> NOTE: If the login returns with an error of Authentication failed with the correct username and password, its asking for CAPTCHA, Please perform a login/(re)login manually using a browser to solve the CAPTCHA. After that, you can try to perfom the API login again.
 
 After login, you'll be able to run the following Skype functions:
 
@@ -110,9 +115,11 @@ _Leaves a group:_
 $sk->leaveGroup({GROUP_ID});
 ```
 
-> For groups messaging, you can use the same mothods for chat messaging. You'll only need to provide the group id instead the chat id.
+> For groups messaging, you can use the same method for chat. You'll only need to provide the group id instead the chat id.
 
 ## Documentation
-Sorry, I hadn't time to publish a clean documentation at the moment. You can see `example/example.php` for technical details. For Skype API support see: https://developer.microsoft.com/en-us/skype/bots/docs
+Please note that a comprehensive documentation is currently in the works, but hasn't been finalized yet due to time constraints. In the meantime, you can explore the technical details by referring to the `example/example.php` file provided within the project.
+
+For additional information and support related to the Skype API, please visit the official Skype API documentation at: [Skype API Documentation](https://developer.microsoft.com/en-us/skype/bots/docs)
 
 #### I really hope this can helps you somehow, good luck! 
